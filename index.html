@@ -39,14 +39,16 @@ h2.ind{color:#ffc400}
 .pub .t{font-weight:700;font-size:16px;margin:4px 0 8px}
 .pub .net{display:inline-block;font-size:12px;font-weight:700;color:var(--text);text-decoration:none;border:1px solid var(--muted);padding:3px 8px;margin:0 6px 6px 0;border-radius:999px}
 .pubs .empty{text-align:center;color:var(--muted);font-size:14px}
+.lang{display:flex;gap:8px;justify-content:center;margin:-18px 0 24px}.lang button{font:700 12px 'Space Grotesk',sans-serif;background:transparent;color:var(--muted);border:1px solid var(--muted);border-radius:999px;padding:3px 10px;cursor:pointer}.lang button.on{background:var(--blue);border-color:var(--blue);color:var(--text)}
 footer{color:var(--muted);font-size:13px;margin-top:36px}
 </style>
 </head>
 <body>
 <main>
   <div class="logo">RETRO<br>16 BITS</div>
-  <p class="sub">Videojuegos retro (Mega Drive y Super Nintendo) y, los sábados, automatización industrial.</p>
-  <span class="pill">Creado con IA</span>
+  <p class="sub" data-i="sub">Videojuegos retro (Mega Drive y Super Nintendo) y, los sábados, automatización industrial.</p>
+  <span class="pill" data-i="pill">Creado con IA</span>
+  <div class="lang"><button data-l="es">ES</button><button data-l="en">EN</button><button data-l="de">DE</button></div>
   <div class="links">
   <a class="btn" href="https://www.instagram.com/thinksmart_iaf/">Instagram</a>
   <a class="btn" href="https://www.tiktok.com/@ivantropic444">TikTok</a>
@@ -83,21 +85,35 @@ footer{color:var(--muted);font-size:13px;margin-top:36px}
   </section>
   </div>
   <section class="pubs">
-  <h2>YA PUBLICADO</h2>
-  <div id="pubs"><p class="empty">Aquí aparecerá cada publicación en cuanto se compruebe que ha salido.</p></div>
+  <h2 data-i="pubs">YA PUBLICADO</h2>
+  <div id="pubs"><p class="empty" data-i="empty">Aquí aparecerá cada publicación en cuanto se compruebe que ha salido.</p></div>
   </section>
-  <footer>Contenido creado con ayuda de IA. Las marcas citadas pertenecen a sus dueños.</footer>
+  <footer data-i="foot">Contenido creado con ayuda de IA. Las marcas citadas pertenecen a sus dueños.</footer>
 </main>
 <script>
 var REDES={instagram:["Instagram","https://www.instagram.com/thinksmart_iaf/"],tiktok:["TikTok","https://www.tiktok.com/@ivantropic444"],facebook:["Facebook","https://www.facebook.com/1442134562306416"],threads:["Threads","https://www.threads.net/@thinksmart_iaf"],pinterest:["Pinterest","https://www.pinterest.com/ivanalmarzafernandez/"]};
+var T={
+ es:{sub:"Videojuegos retro (Mega Drive y Super Nintendo) y, los sábados, automatización industrial.",pill:"Creado con IA",pubs:"YA PUBLICADO",empty:"Aquí aparecerá cada publicación en cuanto se compruebe que ha salido.",foot:"Contenido creado con ayuda de IA. Las marcas citadas pertenecen a sus dueños.",series:{}},
+ en:{sub:"Retro video games (Mega Drive and Super Nintendo) and, on Saturdays, industrial automation.",pill:"Made with AI",pubs:"ALREADY POSTED",empty:"Each post will appear here as soon as it is confirmed live.",foot:"Content created with the help of AI. Brands mentioned belong to their owners.",series:{"Industria":"Industry","Tendencias":"Trending"}},
+ de:{sub:"Retro-Videospiele (Mega Drive und Super Nintendo) und samstags Industrieautomatisierung.",pill:"Mit KI erstellt",pubs:"SCHON VERÖFFENTLICHT",empty:"Jeder Beitrag erscheint hier, sobald bestätigt ist, dass er online ist.",foot:"Mit Hilfe von KI erstellte Inhalte. Genannte Marken gehören ihren Inhabern.",series:{"Industria":"Industrie","Tendencias":"Trends"}}
+};
+function pick(){try{var s=localStorage.getItem("lang");if(T[s])return s}catch(e){}
+ var l=(navigator.languages||[navigator.language||"es"]);for(var i=0;i<l.length;i++){var c=String(l[i]).slice(0,2).toLowerCase();if(T[c])return c}return "en"}
+var LANG=pick(),PUBS=[];
 function esc(t){var d=document.createElement("div");d.textContent=t;return d.innerHTML}
-fetch("publicaciones.json?"+Date.now()).then(function(r){return r.json()}).then(function(l){
- if(!l.length)return;
- document.getElementById("pubs").innerHTML=l.map(function(p){
-  return '<div class="pub"><div class="meta">'+esc(p.fecha)+' · '+esc(p.serie)+'</div><div class="t">'+esc(p.titulo)+'</div>'+
+function render(){
+ var t=T[LANG];document.documentElement.lang=LANG;
+ document.querySelectorAll("[data-i]").forEach(function(e){if(e.dataset.i!=="empty"||!PUBS.length)e.textContent=t[e.dataset.i]});
+ document.querySelectorAll(".lang button").forEach(function(b){b.className=b.dataset.l===LANG?"on":""});
+ if(!PUBS.length)return;
+ document.getElementById("pubs").innerHTML=PUBS.map(function(p){
+  var tit=p["titulo_"+LANG]||p.titulo,ser=t.series[p.serie]||p.serie;
+  return '<div class="pub"><div class="meta">'+esc(p.fecha)+' · '+esc(ser)+'</div><div class="t">'+esc(tit)+'</div>'+
   p.redes.filter(function(n){return REDES[n]}).map(function(n){return '<a class="net" href="'+REDES[n][1]+'">'+REDES[n][0]+'</a>'}).join("")+'</div>'
- }).join("")
-}).catch(function(){});
+ }).join("")}
+document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){LANG=b.dataset.l;try{localStorage.setItem("lang",LANG)}catch(e){}render()}});
+render();
+fetch("publicaciones.json?"+Date.now()).then(function(r){return r.json()}).then(function(l){PUBS=l||[];render()}).catch(function(){});
 </script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"98854d038103384f45ef70f14a9b9f45"})});</script>
 </body>
