@@ -5,6 +5,7 @@ Web: https://ivantropic444.github.io/WebSite/
 Lo más reciente, arriba. Horas de Madrid.
 
 ## 17 de octubre de 2026
+- **19:08** · "Ya publicado": La Mega Drive en 5 datos también en TikTok.
 - **18:58** · "Ya publicado": primera entrada, La Mega Drive en 5 datos (Instagram, Facebook, Threads y Pinterest).
 - **18:22** · Nueva sección "Ya publicado": cada publicación comprobada aparece con su fecha, su serie y las redes donde salió, con enlace a cada canal. Los datos están en publicaciones.json.
 - **18:03** · Botones de redes a la mitad de tamaño, en dos filas (3 arriba y 2 abajo).
