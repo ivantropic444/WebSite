@@ -5,6 +5,7 @@ Web: https://ivantropic444.github.io/WebSite/
 Lo más reciente, arriba. Horas de Madrid.
 
 ## 17 de octubre de 2026
+- **19:35** · "Ya publicado": ¿Qué es un PLC? (industria) en las 5 redes.
 - **19:08** · "Ya publicado": La Mega Drive en 5 datos también en TikTok.
 - **18:58** · "Ya publicado": primera entrada, La Mega Drive en 5 datos (Instagram, Facebook, Threads y Pinterest).
 - **18:22** · Nueva sección "Ya publicado": cada publicación comprobada aparece con su fecha, su serie y las redes donde salió, con enlace a cada canal. Los datos están en publicaciones.json.
