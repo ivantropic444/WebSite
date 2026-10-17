@@ -5,6 +5,7 @@ Web: https://ivantropic444.github.io/WebSite/
 Lo más reciente, arriba. Horas de Madrid.
 
 ## 17 de octubre de 2026
+- **22:35** · "Ya publicado": 5 películas con coches voladores (tendencias) en Instagram, TikTok, Facebook y Threads.
 - **21:40** · La web se lee en español, inglés o alemán según el idioma del navegador de quien la abre, con botones ES / EN / DE para cambiarlo.
 - **19:35** · "Ya publicado": ¿Qué es un PLC? (industria) en las 5 redes.
 - **19:08** · "Ya publicado": La Mega Drive en 5 datos también en TikTok.
