@@ -1,69 +1,104 @@
 [
-  {
-    "fecha": "17 oct 2026, 23:15",
-    "serie": "Super Nintendo",
-    "titulo": "La Super Nintendo por dentro",
-    "titulo_en": "Inside the Super Nintendo",
-    "titulo_de": "Das Super Nintendo von innen",
-    "redes": [
-      "instagram",
-      "tiktok",
-      "facebook",
-      "threads"
-    ]
-  },
-  {
-    "fecha": "17 oct 2026, 22:45",
-    "serie": "Mega Drive",
-    "titulo": "La Mega Drive por dentro",
-    "titulo_en": "Inside the Mega Drive",
-    "titulo_de": "Das Mega Drive von innen",
-    "redes": [
-      "instagram",
-      "tiktok",
-      "facebook",
-      "threads"
-    ]
-  },
-  {
-    "fecha": "17 oct 2026, 22:15",
-    "serie": "Tendencias",
-    "titulo": "5 películas con coches voladores",
-    "titulo_en": "5 films with flying cars",
-    "titulo_de": "5 Filme mit fliegenden Autos",
-    "redes": [
-      "instagram",
-      "tiktok",
-      "facebook",
-      "threads"
-    ]
-  },
-  {
-    "fecha": "17 oct 2026, 19:30",
-    "serie": "Industria",
-    "titulo": "¿Qué es un PLC?",
-    "redes": [
-      "instagram",
-      "tiktok",
-      "facebook",
-      "threads",
-      "pinterest"
-    ],
-    "titulo_en": "What is a PLC?",
-    "titulo_de": "Was ist eine SPS?"
-  },
-  {
-    "fecha": "17 oct 2026, 18:30",
-    "serie": "Mega Drive",
-    "titulo": "La Mega Drive en 5 datos",
-    "redes": [
-      "instagram",
-      "tiktok",
-      "facebook",
-      "threads",
-      "pinterest"
-    ],
-    "titulo_en": "The Mega Drive in 5 facts",
-    "titulo_de": "Das Mega Drive in 5 Fakten"
-  }
+ {
+  "fecha": "18 oct 2026, 19:00",
+  "serie": "Tendencias",
+  "titulo": "Un dragón retro con coche volador (3D)",
+  "titulo_en": "A retro dragon with a flying car (3D)",
+  "titulo_de": "Ein Retro-Drache mit fliegendem Auto (3D)",
+  "redes": [
+   "instagram",
+   "tiktok"
+  ]
+ },
+ {
+  "fecha": "18 oct 2026, 13:06",
+  "serie": "Tendencias",
+  "titulo": "La furgo de toda la vida ahora vuela (3D)",
+  "titulo_en": "The classic old van now flies (3D)",
+  "titulo_de": "Der alte Kultlieferwagen fliegt jetzt (3D)",
+  "redes": [
+   "instagram",
+   "tiktok"
+  ]
+ },
+ {
+  "fecha": "18 oct 2026, 13:00",
+  "serie": "Tendencias",
+  "titulo": "5 series con coches voladores",
+  "titulo_en": "5 TV series with flying cars",
+  "titulo_de": "5 Serien mit fliegenden Autos",
+  "redes": [
+   "instagram",
+   "tiktok",
+   "facebook",
+   "threads"
+  ]
+ },
+ {
+  "fecha": "17 oct 2026, 23:15",
+  "serie": "Super Nintendo",
+  "titulo": "La Super Nintendo por dentro",
+  "titulo_en": "Inside the Super Nintendo",
+  "titulo_de": "Das Super Nintendo von innen",
+  "redes": [
+   "instagram",
+   "tiktok",
+   "facebook",
+   "threads"
+  ]
+ },
+ {
+  "fecha": "17 oct 2026, 22:45",
+  "serie": "Mega Drive",
+  "titulo": "La Mega Drive por dentro",
+  "titulo_en": "Inside the Mega Drive",
+  "titulo_de": "Das Mega Drive von innen",
+  "redes": [
+   "instagram",
+   "tiktok",
+   "facebook",
+   "threads"
+  ]
+ },
+ {
+  "fecha": "17 oct 2026, 22:15",
+  "serie": "Tendencias",
+  "titulo": "5 películas con coches voladores",
+  "titulo_en": "5 films with flying cars",
+  "titulo_de": "5 Filme mit fliegenden Autos",
+  "redes": [
+   "instagram",
+   "tiktok",
+   "facebook",
+   "threads"
+  ]
+ },
+ {
+  "fecha": "17 oct 2026, 19:30",
+  "serie": "Industria",
+  "titulo": "¿Qué es un PLC?",
+  "redes": [
+   "instagram",
+   "tiktok",
+   "facebook",
+   "threads",
+   "pinterest"
+  ],
+  "titulo_en": "What is a PLC?",
+  "titulo_de": "Was ist eine SPS?"
+ },
+ {
+  "fecha": "17 oct 2026, 18:30",
+  "serie": "Mega Drive",
+  "titulo": "La Mega Drive en 5 datos",
+  "redes": [
+   "instagram",
+   "tiktok",
+   "facebook",
+   "threads",
+   "pinterest"
+  ],
+  "titulo_en": "The Mega Drive in 5 facts",
+  "titulo_de": "Das Mega Drive in 5 Fakten"
+ }
 ]
