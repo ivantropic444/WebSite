@@ -22,3 +22,5 @@ Lo más reciente, arriba. Horas de Madrid.
 - **17:16** · Primera versión: logo, botones a Instagram, TikTok y Facebook y últimos posts de Mega Drive.
 
 - 18 oct 2026, 19:46: añadidas a "Ya publicado" las 3 publicaciones de hoy (5 series con coches voladores, furgo voladora 3D, dragón retro 3D).
+
+- 19 oct 2026, 19:46: "Ya publicado" suma 4 posts del 19 oct (dos pantallas, motos voladoras, Chispa 3D, protestas).
