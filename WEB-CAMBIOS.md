@@ -26,3 +26,4 @@ Lo más reciente, arriba. Horas de Madrid.
 - 19 oct 2026, 19:46: "Ya publicado" suma 4 posts del 19 oct (dos pantallas, motos voladoras, Chispa 3D, protestas).
 - 2 nov 2026, 19:47 (Madrid): añadidos Niza (Tendencias, 13:00) y El cartucho que no quería apagarse (vídeo, 18:00).
 - 3 nov 2026, 19:47 (Madrid): añadido 5 IAs del cine (Tendencias: carrusel 13:00 en IG/FB/Threads y reel 18:00 en IG/TikTok).
+- 4 nov 2026, 19:47 (Madrid): añadidos Roblox y Steam (Tendencias, 13:00) y La pila que guardaba tu partida (vídeo, 18:00).
