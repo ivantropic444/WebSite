@@ -29,3 +29,4 @@ Lo más reciente, arriba. Horas de Madrid.
 - 4 nov 2026, 19:47 (Madrid): añadidos Roblox y Steam (Tendencias, 13:00) y La pila que guardaba tu partida (vídeo, 18:00).
 - 5 nov 2026, 19:46 (Madrid): añadidos Arquímedes en una molécula (Tendencias, 13:00) y la tele de tubo (vídeo, 18:00).
 - 6 nov 2026, 19:46 (Madrid): añadidos el robot humanoide de 20 horas (Tendencias, 13:00) y ¿Cuánto tardas en bajar 212 GB? (vídeo 3D, 18:00).
+- 7 nov 2026, 19:46 (Madrid): añadidos GTA 6 y los 212 GB (Tendencias, 13:00) y Una antena hecha de luz (vídeo 3D, 18:00).
